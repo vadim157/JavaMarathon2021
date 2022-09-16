@@ -7,6 +7,5 @@ public class Task1 {
         car.setColor("Black");
         car.setYear(2015);
         System.out.println("Модель: " + car.getModel() + "," + " Цвет: " + car.getColor() + "," + " Год выпуска: " + car.getYear());
-
     }
 }
