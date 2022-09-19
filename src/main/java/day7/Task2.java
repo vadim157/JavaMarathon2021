@@ -19,10 +19,15 @@ public class Task2 {
         Player player7 = new Player(st);
         Player.info();
 
-        for( int i = 0; i < 91; i++){
-            player3.run();
-            Player.info();
-        }
+//        for( int i = 0; i < 93; i++){
+//            player3.run();
+//            Player.info();
+//            System.out.println(player3.getStamina());
+//        }
+//
+////        player3.run();
+////        Player.info();
+////        System.out.println(player3.getStamina());
 
 
 

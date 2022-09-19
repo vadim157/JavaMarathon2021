@@ -4,9 +4,9 @@ public class Player {
 
     private int stamina;
 
-    private final static int MAX_STAMINA = 100;
+    public final static int MAX_STAMINA = 100;
 
-    private final static int MIN_STAMINA = 0;
+    public final static int MIN_STAMINA = 0;
 
     private static int countPlayers = 0;
 
@@ -29,6 +29,8 @@ public class Player {
         if (stamina == 1) {
             --stamina;
             --countPlayers;
+        } else if (stamina == 0) {
+            return;
         } else {
             --stamina;
         }
