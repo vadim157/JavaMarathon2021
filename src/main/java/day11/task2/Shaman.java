@@ -2,11 +2,18 @@ package day11.task2;
 
 public class Shaman extends Hero implements MagicAttack, Healer {
 
+    private int magicAtt;
+
     Shaman(){
+        magicAtt = 15;
         setPhysAtt(10);
-        setMagicAtt(15);
+//        setMagicAtt(15);
         setMagicDef(0.2);
         setPhysDef(0.2);
+    }
+
+    public int getMagicAtt() {
+        return magicAtt;
     }
 
     @Override

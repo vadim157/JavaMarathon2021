@@ -2,6 +2,11 @@ package day11.task1;
 
 public class Picker extends Employee implements Worker {
 
+    private final int BONUS_SALARY = 70_000;
+    private final int SALARY_RATE = 80;
+    private final int SALARY_PAYMENT_INDICATOR = 10_000;
+    private final int INDICATOR_NO_PAYMENT_SALARY = 9999;
+
 
     public Picker(Warehouse warehouse) {
         super(warehouse);
@@ -19,11 +24,11 @@ public class Picker extends Employee implements Worker {
             System.out.println("Бонус уже был выплачен");
             return;
         }
-        if (getWarehouse().getCountPickedOrders() == 10_000) {
-            setSalary(getSalary() + 70_000 );
+        if (getWarehouse().getCountPickedOrders() == SALARY_PAYMENT_INDICATOR) {
+            setSalary(getSalary() + BONUS_SALARY );
             System.out.println("Бонус уже был выплачен");
             setPayed(true);
-        } else if (getWarehouse().getCountPickedOrders() <= 9999) {
+        } else if (getWarehouse().getCountPickedOrders() <= INDICATOR_NO_PAYMENT_SALARY) {
             System.out.println("Бонус пока не доступен");
         }
     }

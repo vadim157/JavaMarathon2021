@@ -2,10 +2,16 @@ package day11.task2;
 
 public class Magician extends Hero implements MagicAttack {
 
+    private int magicAtt;
+
     public Magician() {
+        magicAtt = 20;
         setPhysAtt(5);
-        setMagicAtt(20);
         setMagicDef(0.8);
+    }
+
+    public int getMagicAtt() {
+        return magicAtt;
     }
 
     @Override

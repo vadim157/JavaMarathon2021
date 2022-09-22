@@ -10,7 +10,7 @@ public abstract class Hero implements PhysAttack {
 
    private int physAtt;
 
-   private int magicAtt;
+//   private int magicAtt;
 
    public Hero() {
       this.health = 100;
@@ -48,13 +48,13 @@ public abstract class Hero implements PhysAttack {
       this.physAtt = physAtt;
    }
 
-   public int getMagicAtt() {
-      return magicAtt;
-   }
-
-   public void setMagicAtt(int magicAtt) {
-      this.magicAtt = magicAtt;
-   }
+//   public int getMagicAtt() {
+//      return magicAtt;
+//   }
+//
+//   public void setMagicAtt(int magicAtt) {
+//      this.magicAtt = magicAtt;
+//   }
 
    @Override
    public void physicalAttack(Hero hero) {
