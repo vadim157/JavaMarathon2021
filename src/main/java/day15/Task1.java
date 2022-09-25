@@ -25,7 +25,7 @@ public class Task1 {
             }
 
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println("Файл не найден");
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
             System.out.println("Не корректный входной файл");
         }
