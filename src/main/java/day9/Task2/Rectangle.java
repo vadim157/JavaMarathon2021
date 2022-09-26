@@ -2,15 +2,15 @@ package day9.Task2;
 
 public class Rectangle extends Figure {
 
-    private int width;
+    private double width;
+    private double height;
 
-    public Rectangle(String color, int width, int height) {
+    public Rectangle(double width, double height,String color) {
         super(color);
         this.width = width;
         this.height = height;
     }
 
-    private int height;
 
     @Override
     public double area() {

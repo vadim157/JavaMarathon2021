@@ -2,12 +2,12 @@ package day9.Task2;
 
 public class Circle extends Figure {
 
-    public Circle(String color, int radius) {
+    private double radius;
+
+    public Circle(double radius, String color) {
         super(color);
         this.radius = radius;
     }
-
-    private int radius;
 
     @Override
     public double area() {

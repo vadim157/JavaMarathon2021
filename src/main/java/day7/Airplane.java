@@ -78,11 +78,11 @@ public class Airplane {
 
     public static void compareAirplanes(Airplane a, Airplane b) {
         if (a.length > b.length) {
-            System.out.println("Первый самолет длинее");
+            System.out.println("Первый самолет длиннее");
         } else if (a.length < b.length) {
-            System.out.println("Второй самолет длинее");
+            System.out.println("Второй самолет длиннее");
         } else {
-            System.out.println("Длинны самолетов равны");
+            System.out.println("Длины самолетов равны");
         }
 
     }

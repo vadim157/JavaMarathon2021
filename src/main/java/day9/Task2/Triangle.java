@@ -2,11 +2,11 @@ package day9.Task2;
 
 public class Triangle extends Figure {
 
-    private int widthOne;
-    private int widthTwo;
-    private int widthThree;
+    private double widthOne;
+    private double widthTwo;
+    private double widthThree;
 
-    public Triangle(String color, int widthOne, int widthTwo, int widthThree) {
+    public Triangle(double widthOne, double widthTwo, double widthThree, String color) {
         super(color);
         this.widthOne = widthOne;
         this.widthTwo = widthTwo;
