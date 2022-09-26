@@ -6,11 +6,9 @@ public class Task1 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        String city = scanner.nextLine();
-
         boolean flag = true;
         while (flag) {
-            switch (city) {
+            switch (scanner.nextLine()) {
                 case "Рим":
                 case "Милан":
                 case "Турин":
